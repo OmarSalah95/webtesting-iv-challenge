@@ -2,13 +2,10 @@ const db = require('../data/dbConfig.js');
 
 module.exports = {
   insert,
-  update,
-  remove,
   getAll,
-  findById,
 };
 
-function insert(user) {
+async function insert(user) {
   const [id] = await db('users').insert(user);
 
   return db('users')
