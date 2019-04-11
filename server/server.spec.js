@@ -39,7 +39,7 @@ describe('server.js', () => {
                   .post('/users')
                   .send({ name: 'Francis' })
                   .expect(200);
-              });
+            });
 
   });
 
